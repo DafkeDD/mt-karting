@@ -22,3 +22,6 @@ RegisterNetEvent('QBCore:Server:AddMoney', function(acount, amount)
     Player.Functions.AddMoney(acount, amount)
 end)
 ```
+
+# Map credits link: 
+- https://forum.cfx.re/t/map-karting-track-race/2270220
