@@ -37,6 +37,18 @@ CreateThread(function()
         },
         distance = 2.5
     })
+        
+    local blip = AddBlipForCoord(Config.Locations['PedTarget'])
+    
+    SetBlipSprite (blip, 38)
+    SetBlipDisplay(blip, 2)
+    SetBlipScale  (blip, 0.9)
+    SetBlipColour (blip, 37)
+    SetBlipAsShortRange(blip, true)
+
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString('Karting')
+    EndTextCommandSetBlipName(blip)
 end)
 
 RegisterNetEvent('mt-karting:client:MenuAluger', function()
